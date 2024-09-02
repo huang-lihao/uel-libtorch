@@ -11,8 +11,8 @@ if __name__ == "__main__":
     path = Path("temp")
     path.mkdir(exist_ok=True)
     for file in [
-        "abaqus-user-subroutine.cpp",
-        "ExtraUtilities.h",
+        "src/abaqus-user-subroutine.cpp",
+        "src/ExtraUtilities.h",
         "abaqus_v6.env",
     ]:
         shutil.copyfile(file, path / file)
